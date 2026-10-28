@@ -1,0 +1,13 @@
+.vue-clinic-gallery{padding:14px;border:1px solid #e8dfcc;border-radius:24px;background:linear-gradient(135deg,#faf7f0,#eee5d3)}
+.vcg-viewport{overflow:hidden;width:100%;border-radius:16px;direction:ltr;text-align:left}
+.vcg-rail{display:flex;width:max-content;direction:ltr;will-change:transform}
+.vcg-group{display:flex;gap:18px;padding-right:18px;flex:none;width:max-content}
+.vcg-card{position:relative;flex:none;width:var(--card-width,320px);height:300px;overflow:hidden;border:0;border-radius:16px;background:#e7e0d5;padding:0;cursor:zoom-in}
+.vcg-card img{display:block;width:100%;height:100%;object-fit:cover;transition:filter .3s}.vcg-card:hover img{filter:brightness(.88)}
+.vcg-caption{position:absolute;bottom:14px;right:14px;left:14px;padding:12px 14px;border-radius:10px;background:#1e2424e8;color:#fff;font-size:12px;text-align:right}
+.vcg-zoom{position:absolute;top:14px;left:14px;display:grid;place-items:center;width:32px;height:32px;background:#fffdf0ee;color:#76501e;border-radius:50%;font-size:24px}
+.vcg-controls{display:flex;justify-content:center;gap:12px;margin-top:14px}.vcg-controls button{border:1px solid #d9c49b;background:#fffdf8;color:#76501e;border-radius:10px;min-width:40px;height:38px;cursor:pointer;font-size:20px}.vcg-controls .vcg-pause{font-size:11px;padding:0 16px}
+.vue-clinic-gallery button:focus-visible,.vcg-modal button:focus-visible{outline:3px solid #bd8d41;outline-offset:-3px}
+.vcg-modal{position:fixed;inset:0;z-index:1000;background:#111817ed;display:flex;align-items:center;justify-content:center;gap:16px;padding:60px 24px;direction:rtl;backdrop-filter:blur(6px)}
+.vcg-modal figure{margin:0;max-width:80vw;text-align:center}.vcg-modal figure img{display:block;max-width:100%;max-height:76vh;object-fit:contain;border-radius:12px}.vcg-modal figcaption{color:#fff;padding-top:14px;font-size:14px}.vcg-modal button{border:1px solid #ffffff70;border-radius:12px;width:42px;height:42px;background:#ffffff20;color:white;cursor:pointer;font-size:24px;flex:none}.vcg-close{position:absolute;top:18px;left:18px}
+@media(max-width:600px){.vue-clinic-gallery{padding:10px;border-radius:18px}.vcg-card{height:320px}.vcg-modal{gap:6px;padding:54px 8px}.vcg-modal figure{max-width:78vw}.vcg-modal button{width:30px;height:36px}}

@@ -9,8 +9,10 @@ class GalleryCarousel extends Component
 {
     public function render()
     {
+        $images = GalleryImage::visible()->get();
+
         return view('livewire.gallery-carousel', [
-            'images' => GalleryImage::visible()->get(),
+            'images' => $images,
         ]);
     }
 }
