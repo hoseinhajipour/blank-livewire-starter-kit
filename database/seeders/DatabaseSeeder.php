@@ -78,9 +78,9 @@ class DatabaseSeeder extends Seeder
             ['path' => 'photo_5976571529715716016_y.webp', 'title' => 'مراقبت از کودکان', 'alt' => 'مراقبت دندانپزشکی از کودک', 'sort' => 2],
             ['path' => 'photo_5976571529715716017_y.webp', 'title' => 'تجربه آرام درمان', 'alt' => 'تجربه آرام درمان دندانپزشکی', 'sort' => 3],
         ] as $image) {
-            GalleryImage::firstOrCreate(
-                ['image_path' => $image['path']],
-                ['title' => $image['title'], 'alt' => $image['alt'], 'sort_order' => $image['sort'], 'is_active' => true],
+            GalleryImage::updateOrCreate(
+                ['title' => $image['title']],
+                ['image_path' => 'gallery/'.$image['path'], 'alt' => $image['alt'], 'sort_order' => $image['sort'], 'is_active' => true],
             );
         }
     }

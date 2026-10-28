@@ -15,7 +15,7 @@ class GalleryImagesTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image_path')->label('تصویر')->disk('public')->url(fn ($record): string => asset('images/'.$record->image_path)),
+                ImageColumn::make('image_path')->label('تصویر')->disk('public')->url(fn ($record): string => str_starts_with($record->image_path, 'gallery/') ? asset('storage/'.$record->image_path) : asset('images/'.$record->image_path)),
                 TextColumn::make('title')->label('عنوان')->searchable(),
                 TextColumn::make('image_path')->label('فایل'),
                 TextColumn::make('is_active')->label('فعال')->badge()->formatStateUsing(fn (bool $state): string => $state ? 'فعال' : 'غیرفعال'),

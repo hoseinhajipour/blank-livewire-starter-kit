@@ -4,8 +4,9 @@
         <div class="gallery-lightbox" data-gallery-lightbox>
             <div class="gallery-track" data-gallery-track>
                 @foreach($images as $image)
-                    <button class="gallery-slide" type="button" data-gallery-slide data-full="{{ asset('images/'.$image->image_path) }}" data-title="{{ $image->title }}" aria-label="نمایش {{ $image->title }}">
-                        <img src="{{ asset('images/'.$image->image_path) }}" alt="{{ $image->alt ?: $image->title }}" loading="lazy">
+                    @php($imageUrl = str_starts_with($image->image_path, 'gallery/') ? asset('storage/'.$image->image_path) : asset('images/'.$image->image_path))
+                    <button class="gallery-slide" type="button" data-gallery-slide data-full="{{ $imageUrl }}" data-title="{{ $image->title }}" aria-label="نمایش {{ $image->title }}">
+                        <img src="{{ $imageUrl }}" alt="{{ $image->alt ?: $image->title }}" loading="lazy">
                         <span class="gallery-slide-caption">{{ $image->title }}</span>
                     </button>
                 @endforeach
