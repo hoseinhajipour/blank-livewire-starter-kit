@@ -127,7 +127,7 @@ class AppServiceProvider extends ServiceProvider
                 '@type' => 'Dentist',
                 'name' => 'مطب دندانپزشکی دکتر اشرف سادات حسینی',
                 'url' => url('/'),
-                'telephone' => '+982654747265',
+                'telephone' => ['+982626545747', '+982626551835', '+989013987065'],
                 'image' => asset('images/icon.webp'),
                 'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'لواسان', 'addressCountry' => 'IR'],
                 'areaServed' => 'لواسان و اطراف',

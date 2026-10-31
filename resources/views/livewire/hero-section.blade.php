@@ -2,7 +2,7 @@
     <div class="container hero-grid">
         <div class="hero-copy">
             <span class="eyebrow">دندانپزشکی با نگاه انسانی</span>
-            <h1>لبخند شما،<br><em>تخصص ماست.</em></h1>
+            <h1>لبخند شما<br><em>تخصص ماست.</em></h1>
             <p>در مطب دکتر اشرف سادات حسینی، درمان‌های زیبایی، کودکان و ریشه با آرامش، دقت و تجربه بیش از ۲۰ سال انجام می‌شود.</p>
             <div class="hero-actions"><a class="btn btn-gold" href="{{ route('contact') }}">مشاوره و رزرو نوبت <span>←</span></a><a class="btn btn-ghost" href="{{ route('services') }}">خدمات ما</a></div>
             <div class="trust-row"><div><strong>۲۰+</strong><span>سال تجربه</span></div><div><strong>۴</strong><span>تخصص کلیدی</span></div><div><strong>۱۰۰٪</strong><span>مراقبت شخصی</span></div></div>

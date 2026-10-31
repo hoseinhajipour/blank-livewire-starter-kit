@@ -2,7 +2,7 @@
     $active = fn (string ...$patterns): string => request()->routeIs(...$patterns) ? 'is-active' : '';
 @endphp
 <header class="site-header">
-  <div class="topline"><div class="container top-inner"><span>شنبه تا چهارشنبه · صبح و عصر</span><a href="tel:02654747265">۰۲۶۵۴۷۴۷۲۶۵</a></div></div>
+  <div class="topline"><div class="container top-inner"><span>شنبه تا چهارشنبه · صبح و عصر</span><span><a href="tel:02626545747">۰۲۶۲۶۵۴۵۷۴۷</a> · <a href="tel:02626551835">۰۲۶۲۶۵۵۱۸۳۵</a> · <a href="tel:09013987065">۰۹۰۱۳۹۸۷۰۶۵</a></span></div></div>
   <div class="container nav-wrap">
     <a class="brand" href="{{ route('home') }}"><img src="{{ asset('images/logo-wide.webp') }}" alt="مطب دکتر حسینی"><span>مطب دکتر حسینی</span></a>
     <button class="menu-toggle" id="menu-toggle" aria-label="باز کردن منو"><span></span><span></span><span></span></button>
